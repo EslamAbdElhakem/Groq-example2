@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .color-box {
+      width: 100px;
+      height: 100px;
+      margin: 10px auto;
+      border: 1px solid #000;
+    }
+    #color-combinations {
+      margin-top: 20px;
+    }
+    .combination {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    .combination div {
+      width: 50px;
+      height: 50px;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Color Picker App</h1>
+  <input type="color" id="colorPicker">
+  <button onclick="sendColor()">Get Color Combinations</button>
+  <div class="color-box" id="selectedColor"></div>
+  <div id="color-combinations"></div>
+  <script src="script.js"></script>
+</body>
+</html>
